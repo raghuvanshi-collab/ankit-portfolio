@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Singh | Developer, AI & IoT</title>
+    <meta name="description" content="Portfolio of Ankit Singh, a Computer Science & Engineering student building practical software, AI and IoT projects.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cinematic Page Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-left">
+                <div class="loader-text-wrapper">
+                    <h1 class="loader-name">ANKIT SINGH</h1>
+                </div>
+                <div class="loader-text-wrapper">
+                    <h2 class="loader-role">Developer / AI / IoT</h2>
+                </div>
+                <div class="loader-quote-container">
+                    <div class="loader-line"></div>
+                    <p class="loader-quote" id="loader-quote">"Code is not just what I write, it's how I solve problems."</p>
+                </div>
+            </div>
+            <div class="loader-right">
+                <div class="loader-photo-wrapper" style="background-color: var(--bg-surface);">
+                    <img src="assests/photo2.jpeg" alt="Ankit Singh" class="loader-photo" id="loader-photo" style="object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subtle Animated Background -->
+    <div class="ambient-background">
+        <div class="ambient-glow" id="ambient-glow"></div>
+        <canvas id="magnetic-grid"></canvas>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower">
+        <span class="cursor-text"></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo" data-cursor="hover">Ankit.</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-cursor="hover">About</a>
+                <a href="#projects" class="nav-link" data-cursor="hover">Work</a>
+                <a href="#achievements" class="nav-link" data-cursor="hover">Achievements</a>
+                <a href="#resume" class="nav-link" data-cursor="hover">CV</a>
+            </div>
+            <div class="mobile-menu-btn" data-cursor="hover">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-indicator"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">CV</a>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <header id="hero" class="section hero-editorial">
+        <div class="hero-text-content">
+            <div class="reveal-line hero-pretitle-wrapper">
+                <p class="hero-pretitle reveal-text">Portfolio</p>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="reveal-line"><span class="reveal-text">Ankit</span></span><br>
+                <span class="reveal-line"><span class="reveal-text delay-1">Singh.</span></span>
+            </h1>
+            
+            <div class="hero-roles">
+                <div class="reveal-line">
+                    <p class="reveal-text delay-2">Computer Science & Engineering Student</p>
+                </div>
+                <div class="reveal-line">
+                    <p class="accent-text reveal-text delay-3">Developer / AI / IoT</p>
+                </div>
+            </div>
+            
+            <div class="hero-actions fade-up delay-4">
+                <a href="#projects" class="btn btn-primary" data-cursor="hover">View My Work</a>
+                <a href="assests/Cv%20Template-1%20(1).docx" class="btn btn-outline" download data-cursor="download">Download CV</a>
+            </div>
+        </div>
+        
+        <div class="hero-image-wrapper">
+            <div class="image-reveal-mask">
+                <img src="assests/photo2.jpeg" alt="Ankit Singh" class="hero-img parallax-subtle">
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="scroll-down-indicator fade-in delay-5">
+            <div class="line"></div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section about-editorial">
+        <div class="container">
+            <div class="editorial-grid">
+                <div class="col-image scroll-reveal">
+                    <div class="image-frame portrait-frame" data-cursor="view">
+                        <div class="image-reveal-mask">
+                            <img src="assests/photo7.png" alt="Ankit Singh" class="parallax-img image-hover-scale">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-text scroll-reveal">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">
+                        <span class="reveal-line"><span class="reveal-text">Who I Am.</span></span>
+                    </h2>
+                    <div class="editorial-text fade-up-stagger">
+                        <p class="lead">I am a builder focused on bridging the gap between software and hardware.</p>
+                        <p>Currently pursuing my Bachelor of Technology in Computer Science and Engineering at Lovely Professional University. My core interests lie in Artificial Intelligence, full-stack web development, and IoT solutions.</p>
+                        <p>I thrive on translating complex problems into clean, efficient, and user-centric software. When I am not coding, I'm continuously learning about new technologies and architectures to expand my engineering toolkit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SELECTED PROJECTS SECTION -->
+    <section id="projects" class="section projects-editorial">
+        <div class="container">
+            <span class="section-number scroll-reveal">02</span>
+            <h2 class="section-title scroll-reveal">
+                <span class="reveal-line"><span class="reveal-text">Selected Projects.</span></span>
+            </h2>
+            
+            <div class="case-studies">
+                
+                <!-- Project 1 -->
+                <div class="case-study scroll-reveal" data-cursor="view">
+                    <div class="case-study-info">
+                        <span class="case-date fade-up-stagger">April 2026</span>
+                        <h3 class="case-title fade-up-stagger">AI Career Navigator</h3>
+                        <p class="case-subtitle fade-up-stagger">Generative AI Career Platform</p>
+                        
+                        <div class="case-details fade-up-stagger">
+                            <p><strong>The Challenge:</strong> Navigating career paths is often confusing and lacks personalized, data-driven guidance.</p>
+                            <p><strong>The Solution:</strong> A full-stack, AI-powered platform providing personalized career recommendations, skill gap analysis, transition insights, and roadmap generation. Built an AI Career Assistant and live resume builder with PDF export integrating the Google Gemini API.</p>
+                        </div>
+
+                        <div class="tech-stack-minimal fade-up-stagger">
+                            <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">Node.js</span> <span class="tag">MongoDB</span> <span class="tag">Gemini API</span>
+                        </div>
+                        
+                        <a href="#" class="case-link fade-up-stagger" data-cursor="hover" onclick="openCaseStudy('ai-career-navigator'); return false;">
+                            <span class="case-link-text">Explore Case Study</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                    <div class="case-study-visual">
+                        <div class="project-image-container fade-up delay-4">
+                            <img src="assests/ai-career-navigator.png" alt="AI Career Navigator" class="project-img">
+                            <div class="project-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="case-study reverse scroll-reveal" data-cursor="view">
+                    <div class="case-study-info">
+                        <span class="case-date fade-up-stagger">December 2025</span>
+                        <h3 class="case-title fade-up-stagger">Smart Medicine Box</h3>
+                        <p class="case-subtitle fade-up-stagger">IoT-Based Medication Monitoring System</p>
+                        
+                        <div class="case-details fade-up-stagger">
+                            <p><strong>The Challenge:</strong> Missing medication doses can lead to severe health consequences for patients.</p>
+                            <p><strong>The Solution:</strong> An IoT-enabled medicine reminder system utilizing ESP32-CAM, buzzer, LED, and LCD alerts. Implemented Python email automation for missed doses and integrated a Telegram Bot API to capture and send intake confirmation images.</p>
+                        </div>
+
+                        <div class="tech-stack-minimal fade-up-stagger">
+                            <span class="tag">ESP32-CAM</span> <span class="tag">Arduino</span> <span class="tag">Python</span> <span class="tag">IoT</span> <span class="tag">Telegram API</span>
+                        </div>
+                        
+                        <a href="#" class="case-link fade-up-stagger" data-cursor="hover" onclick="openCaseStudy('smart-medicine-box'); return false;">
+                            <span class="case-link-text">Explore Case Study</span>
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                    <div class="case-study-visual">
+                        <div class="project-image-container fade-up delay-4">
+                            <img src="assests/smart-medicine-box.png" alt="Smart Medicine Box" class="project-img">
+                            <div class="project-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ACHIEVEMENTS & 5. SKILLS SECTION -->
+    <section id="achievements" class="section dark-editorial">
+        <div class="container">
+            <div class="editorial-dual">
+                
+                <div class="achievements-col scroll-reveal">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">
+                        <span class="reveal-line"><span class="reveal-text">Milestones.</span></span>
+                    </h2>
+                    
+                    <div class="milestone-list">
+                        <div class="milestone fade-up-stagger">
+                            <div class="milestone-meta">August 2026</div>
+                            <h4 class="milestone-title">Patent Filing</h4>
+                            <p>Filed a patent for "Medicine Reminder Apparatus with Intake Verification and Remote Notification".</p>
+                        </div>
+                        <div class="milestone fade-up-stagger">
+                            <div class="milestone-meta">March 2026</div>
+                            <h4 class="milestone-title">Interuniversity Hackathon</h4>
+                            <p>Participated in the Hack n Win Hackathon 3.0 by Dev-folio.</p>
+                        </div>
+                        <div class="milestone fade-up-stagger">
+                            <div class="milestone-meta">February 2026</div>
+                            <h4 class="milestone-title">Prompt Builder Hackathon</h4>
+                            <p>Brainstormed prompt-building knowledge to build a unique website.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="milestone-image mt-5 fade-up" data-cursor="view">
+                        <div class="image-reveal-mask" style="background-color: var(--bg-surface);">
+                            <img src="assests/photo8.jpeg" alt="Build With AI Hackathon" class="image-hover-scale" style="object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-col scroll-reveal" id="skills">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">
+                        <span class="reveal-line"><span class="reveal-text">Capabilities.</span></span>
+                    </h2>
+                    
+                    <div class="capabilities-grid">
+                        <div class="capability-block fade-up-stagger">
+                            <h4>Languages</h4>
+                            <p>C++, Python, C, HTML, CSS</p>
+                        </div>
+                        <div class="capability-block fade-up-stagger">
+                            <h4>Frameworks</h4>
+                            <p>NodeJS, React</p>
+                        </div>
+                        <div class="capability-block fade-up-stagger">
+                            <h4>Tools & Platforms</h4>
+                            <p>Git, GitHub, VS Code, Vercel, Render, MongoDB Atlas, Arduino IDE, Postman</p>
+                        </div>
+                        <div class="capability-block fade-up-stagger">
+                            <h4>Soft Skills</h4>
+                            <p>Problem Solving, Teamwork, Communication, Adaptability, Time Management, Quick Learning</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. EDUCATION & 7. CERTIFICATIONS -->
+    <section id="education" class="section education-editorial">
+        <div class="container">
+            <div class="editorial-grid">
+                <div class="col-text scroll-reveal">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">
+                        <span class="reveal-line"><span class="reveal-text">Education.</span></span>
+                    </h2>
+                    
+                    <div class="edu-list">
+                        <div class="edu-item fade-up-stagger">
+                            <span class="edu-date">Since August 2025</span>
+                            <h3>Lovely Professional University</h3>
+                            <p class="edu-degree">Bachelor of Technology - Computer Science and Engineering</p>
+                            <p class="edu-meta">Punjab, India • CGPA: 7.54</p>
+                        </div>
+                        <div class="edu-item fade-up-stagger">
+                            <span class="edu-date">April 2024 - March 2025</span>
+                            <h3>Indian Convent School</h3>
+                            <p class="edu-degree">Intermediate</p>
+                            <p class="edu-meta">Keshavrao Patan, Kota • 74%</p>
+                        </div>
+                        <div class="edu-item fade-up-stagger">
+                            <span class="edu-date">April 2021 - March 2022</span>
+                            <h3>Sant Atulanand Convent School</h3>
+                            <p class="edu-degree">Matriculation</p>
+                            <p class="edu-meta">Koi Rajpur, Varanasi • 86%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-image scroll-reveal">
+                    <div class="image-frame edu-frame" data-cursor="view">
+                        <div class="image-reveal-mask">
+                            <img src="assests/photo6.jpeg" alt="LPU Campus" class="parallax-img image-hover-scale">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="certifications" class="certifications-block mt-5 scroll-reveal">
+                <span class="section-number">06</span>
+                <h2 class="section-title">
+                    <span class="reveal-line"><span class="reveal-text">Certifications.</span></span>
+                </h2>
+                <div class="cert-list">
+                    <div class="cert-item fade-up-stagger">
+                        <h4>Introduction to Artificial Intelligence</h4>
+                        <p>Infosys Springboard</p>
+                        <span class="cert-meta">March 2026</span>
+                    </div>
+                    <div class="cert-item fade-up-stagger">
+                        <h4>Generative AI Learning Plan for Model Builder</h4>
+                        <p>AWS Training and Certification</p>
+                        <span class="cert-meta">February 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. BEYOND CODE -->
+    <section id="beyond" class="section beyond-editorial">
+        <div class="container">
+            <div class="editorial-grid reverse-grid">
+                <div class="col-text scroll-reveal">
+                    <span class="section-number">07</span>
+                    <h2 class="section-title">
+                        <span class="reveal-line"><span class="reveal-text">Beyond Code.</span></span>
+                    </h2>
+                    <div class="editorial-text fade-up-stagger">
+                        <p class="lead">Engineering is my core pursuit, but stepping away from the screen provides the necessary perspective to build better systems.</p>
+                        <p>Whether traveling, exploring new environments, or experiencing different cultures, I believe a diverse set of real-world experiences fuels creativity and practical problem-solving in the digital realm.</p>
+                    </div>
+                </div>
+                <div class="col-image scroll-reveal">
+                    <img src="assests/photo102.jpeg" alt="Traveling" style="width: 100%; height: auto; display: block; border-radius: 8px;" class="fade-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. RESUME & 10. CONTACT -->
+    <section id="resume" class="section contact-editorial">
+        <div class="container text-center scroll-reveal">
+            <span class="section-number">08</span>
+            <h2 class="huge-title">
+                <span class="reveal-line"><span class="reveal-text">Let's connect.</span></span>
+            </h2>
+            <p class="contact-subtitle fade-up">Currently open for opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
+            
+            <div class="prominent-socials mt-5 fade-up">
+                <a href="https://linkedin.com/" target="_blank" class="social-btn" data-cursor="open">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/raghuvanshi-collab" target="_blank" class="social-btn" data-cursor="open">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="contact-links mt-5 fade-up">
+                <a href="mailto:ankit29raghuvanshi@gmail.com" class="big-link" data-cursor="hover">Say Hello <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+                <a href="assests/Cv%20Template-1%20(1).docx" class="big-link" download data-cursor="download">Download CV <span class="arrow"><i class="fas fa-arrow-down"></i></span></a>
+            </div>
+            
+            <div class="footer-meta mt-5 fade-up">
+                <a href="mailto:ankit29raghuvanshi@gmail.com" data-cursor="hover">ankit29raghuvanshi@gmail.com</a>
+                <a href="tel:+919992826652" data-cursor="hover">+91-9992826652</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <div class="footer-left">
+                <p>&copy; 2026 Ankit Singh. Built with intent.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/raghuvanshi-collab" target="_blank" class="hover-link" data-cursor="hover">GitHub</a>
+                <a href="https://linkedin.com/" target="_blank" class="hover-link" data-cursor="hover">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Case Study Overlays -->
+    <div id="case-study-overlay" class="case-study-overlay">
+        <button class="close-case-study" onclick="closeCaseStudy()" aria-label="Close Case Study" data-cursor="hover">
+            &times;
+        </button>
+        <div class="case-study-content">
+            
+            <!-- AI Career Navigator Case Study -->
+            <div id="cs-ai-career-navigator" class="cs-view">
+                <div class="cs-hero">
+                    <p class="cs-pretitle">Generative AI Career Platform</p>
+                    <h2 class="cs-title">AI CAREER NAVIGATOR</h2>
+                    <div class="cs-hero-image">
+                        <img src="assests/ai-career-navigator.png" alt="AI Career Navigator Project">
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">Overview</h3>
+                    <p>A full-stack, AI-powered platform providing personalized career recommendations, skill gap analysis, transition insights, and roadmap generation. Built an AI Career Assistant and live resume builder with PDF export integrating the Google Gemini API.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">The Challenge</h3>
+                    <p>Navigating career paths is often confusing and lacks personalized, data-driven guidance. Users struggle to find the right skills to learn for their desired roles, and resume building is often disjointed from career planning.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">The Solution</h3>
+                    <p>A unified platform that leverages generative AI to analyze user profiles, identify skill gaps, and provide actionable career roadmaps. It serves as an intelligent career counselor that adapts to individual aspirations and current market demands.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">How It Works</h3>
+                    <div class="cs-flow">
+                        <div class="cs-flow-step">USER PROFILE</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">AI ANALYSIS</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">SKILL GAP ANALYSIS</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">CAREER RECOMMENDATIONS</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">PERSONALIZED ROADMAP</div>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">Key Features</h3>
+                    <ul class="cs-list">
+                        <li>Personalized career recommendations</li>
+                        <li>Skill gap analysis</li>
+                        <li>Transition insights</li>
+                        <li>Roadmap generation</li>
+                        <li>AI Career Assistant</li>
+                        <li>Live resume builder with PDF export</li>
+                    </ul>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">Technology Stack</h3>
+                    <div class="tech-stack-minimal">
+                        <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">Node.js</span> <span class="tag">MongoDB</span> <span class="tag">Gemini API</span>
+                    </div>
+                </div>
+
+                <div class="cs-links">
+                    <a href="https://ai-career-navigator-sable.vercel.app/" target="_blank" class="btn btn-primary" data-cursor="open">Live Demo <i class="fas fa-external-link-alt" style="margin-left: 8px;"></i></a>
+                    <a href="https://github.com/raghuvanshi-collab/ai-career-navigator" target="_blank" class="btn btn-outline" data-cursor="open">GitHub <i class="fab fa-github" style="margin-left: 8px;"></i></a>
+                </div>
+            </div>
+
+            <!-- Smart Medicine Box Case Study -->
+            <div id="cs-smart-medicine-box" class="cs-view">
+                <div class="cs-hero">
+                    <p class="cs-pretitle">IoT-Based Medication Monitoring System</p>
+                    <h2 class="cs-title">SMART MEDICINE BOX</h2>
+                    <div class="cs-hero-image">
+                        <img src="assests/smart-medicine-box.png" alt="Smart Medicine Box Project">
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">Overview</h3>
+                    <p>An IoT-enabled medicine reminder system utilizing ESP32-CAM, buzzer, LED, and LCD alerts. Implemented Python email automation for missed doses and integrated a Telegram Bot API to capture and send intake confirmation images.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">The Challenge</h3>
+                    <p>Missing medication doses can lead to severe health consequences for patients, particularly the elderly or those with chronic conditions who have complex daily medication schedules.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">The Solution</h3>
+                    <p>A smart, connected hardware device that automatically reminds patients to take their medicine and verifies intake. It provides peace of mind to caregivers through remote alerts and visual confirmation.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">How It Works</h3>
+                    <div class="cs-flow">
+                        <div class="cs-flow-step">MEDICATION SCHEDULE</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">REMINDER</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">BUZZER + LED + LCD</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">ESP32-CAM</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">IMAGE CAPTURE</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">PYTHON AUTOMATION</div>
+                        <div class="cs-flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                        <div class="cs-flow-step">TELEGRAM NOTIFICATION</div>
+                    </div>
+                </div>
+
+                <div class="cs-section cs-grid-2">
+                    <div>
+                        <h3 class="cs-section-title">Hardware</h3>
+                        <ul class="cs-list">
+                            <li>ESP32-CAM</li>
+                            <li>Buzzer</li>
+                            <li>LED</li>
+                            <li>LCD Display</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="cs-section-title">Software / IoT</h3>
+                        <ul class="cs-list">
+                            <li>Arduino</li>
+                            <li>Python</li>
+                            <li>Telegram Bot API</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h3 class="cs-section-title">Key Features</h3>
+                    <ul class="cs-list">
+                        <li>Medicine reminder alerts (Buzzer, LED, LCD)</li>
+                        <li>Intake verification via image capture</li>
+                        <li>Remote email automation for missed doses</li>
+                        <li>Telegram alerts for caregivers</li>
+                    </ul>
+                </div>
+
+                <div class="cs-links">
+                    <a href="https://drive.google.com/file/d/1fH4PCwXUM_ggPx9Gk8mX6__9BsNFt1Th/view" target="_blank" class="btn btn-primary" data-cursor="open">Watch Demo <i class="fas fa-play" style="margin-left: 8px;"></i></a>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7406913570657120257/" target="_blank" class="btn btn-outline" data-cursor="open">Project Post <i class="fab fa-linkedin" style="margin-left: 8px;"></i></a>
+                </div>
+            </div>
+
+            <!-- Universal Footer Action -->
+            <div class="cs-footer">
+                <button class="btn btn-outline" onclick="closeCaseStudy()" data-cursor="hover"><i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Back to Work</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
