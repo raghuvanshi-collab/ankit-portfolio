@@ -429,8 +429,13 @@ a {
 .image-frame img { width: 100%; height: auto; object-fit: cover; filter: grayscale(15%); transition: filter 0.8s ease; }
 .image-frame:hover img { filter: grayscale(0%); }
 .portrait-frame { aspect-ratio: 4/5; }
-.edu-frame { aspect-ratio: 4/5; }
-.edu-frame img, .portrait-frame img { object-position: top center; }
+.portrait-frame img { object-position: top center; }
+.edu-frame { aspect-ratio: auto; }
+.edu-frame img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
 
 /* Interactive Projects */
 .projects-editorial { background-color: transparent; }
